@@ -10,5 +10,9 @@
 
 - 4° Implement a JavaScript script that prompts the user for a positive integer. As soon as the user enters a valid value, calculate its factorial and display the result in an alert window.
 
+- 5° Implement a JavaScript script that displays the current date in the format: Wednesday, February 15, 2023.
 
+- 6° Research the use of the setTimeout() method and implement a clock that updates the time every second.
+
+- 7° Implement a script that reads a word or phrase from a text field and displays in an alert window whether or not the text is a palindrome.
 ---

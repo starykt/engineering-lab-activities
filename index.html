@@ -8,15 +8,63 @@
 </head>
 <body>
 
-  <a href="at1.html">Aula 01 - Atividade 01: tipo do dado</a><br>
-  <a href="at2.html">Aula 01 - Atividade 02: primo</a><br>
-  <a href="at3.html">Aula 01 - Atividade 03: par/ímpar</a><br>
-  <a href="at4.html">Aula 01 - Atividade 04: fatorial</a><br>
+  <div class="container">
+    <div class="div1">
+      <h1>Aula 1</h1>
+      <a href="at1.html">Atividade 01: tipo do dado</a><br>
+      <a href="at2.html">Atividade 02: primo</a><br>
+      <a href="at3.html">Atividade 03: par/ímpar</a><br>
+      <a href="at4.html">Atividade 04: fatorial</a><br>
+    </div>
 
-
-  <a href="at5.html">Aula 02 - Atividade 01: par/ímpar</a><br>
-  <a href="at6.html">Aula 02 - Atividade 02: fatorial</a><br>
-  <a href="at7.html">Aula 02 - Atividade 03: fatorial</a><br>
+    <div class="div2">
+      <h1>Aula 2</h1>
+      <a href="at5.html">Atividade 01: data formatada</a><br>
+      <a href="at6.html">Atividade 02: horário formatado</a><br>
+      <a href="at7.html">Atividade 03: palíndromos</a><br>
+    </div>
+  </div>
 
 </body>
 </html>
+
+<style>
+.container {
+  display: flex;
+  text-align: center;
+}
+
+.div1 {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.div2 {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.div1 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.div2 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+a {
+  font-size: 18px;
+}
+
+a:link {
+  color: #6525fa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2d0885;
+  font-size: 22px;
+}
+</style>
