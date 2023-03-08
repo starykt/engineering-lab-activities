@@ -8,13 +8,68 @@
   <script src="script8.js" defer></script>
 </head>
 <body>
-  <form>
-    <label for="valor">Novo Valor:</label>
-    <input type="text" id="valor" name="valor">
-    <button type="button" onclick="adicionarValor()">Adicionar</button>
-  </form>
+  <div class="container">
+    <form>
+      <label for="valor">Insira sua lista de mercado</label>
+      <input type="text" id="valor" name="valor">
+      <button type="button" onclick="adicionarValor()">Adicionar</button>
+    </form>
 
-  <ol id="lista-valores"></ol>
-
+    <ol id="lista-valores"></ol>
+  </div>
 </body>
 </html>
+
+<style>
+  * {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .container {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  ol {
+    margin-top: 1%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+</style>
