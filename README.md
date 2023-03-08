@@ -15,4 +15,8 @@
 - 6° Research the use of the setTimeout() method and implement a clock that updates the time every second.
 
 - 7° Implement a script that reads a word or phrase from a text field and displays in an alert window whether or not the text is a palindrome.
+
+- 8° Implement a script with an array whose values ​​are added dynamically by the user using a form. At each new insertion, display all registered data in alphabetical order in an ordered list of html.
+
+- 9° Implement an HTML form to input the characteristics of a car: make, model, year, color, mileage, value_fipeImplement a script that stores the characteristics filled in the form in an object and that contains, in addition to the above properties, two methods: years of use and market value.
 ---
