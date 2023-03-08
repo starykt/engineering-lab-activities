@@ -9,25 +9,36 @@
 	<h1>Formulário de Carro</h1>
 	<form id="carro-form">
 		<label for="marca-input">Marca:</label>
-		<input type="text" id="marca-input"><br><br>
+		<input type="text" id="marca-input"><br>
 
 		<label for="modelo-input">Modelo:</label>
-		<input type="text" id="modelo-input"><br><br>
+		<input type="text" id="modelo-input"><br>
 
 		<label for="ano-input">Ano:</label>
-		<input type="number" id="ano-input"><br><br>
+		<input type="number" id="ano-input"><br>
 
 		<label for="cor-input">Cor:</label>
-		<input type="text" id="cor-input"><br><br>
+		<input type="text" id="cor-input"><br>
 
 		<label for="km-input">Kilometragem:</label>
-		<input type="number" id="km-input"><br><br>
+		<input type="number" id="km-input"><br>
 
 		<label for="valor-input">Valor Fipe:</label>
 		<input type="number" id="valor-input"><br><br>
 
-		<input type="submit" value="Salvar" class="button">
+		<input type="submit" value="Salvar" class="button"><br><br>
 	</form>
+
+	<div class="resultados">
+		<p id="marca"></p>
+		<p id="modelo"></p>
+		<p id="ano"></p>
+		<p id="cor"></p>
+		<p id="km"></p>
+		<p id="valorFipe"></p>
+		<p id="anosUtilizacao"></p>
+		<p id="valorMercado"></p>
+	</div>
 
 
 </body>
@@ -46,6 +57,12 @@
     margin-bottom: 10px;
     font-size: 20px;
   }
+
+	.resultados {
+		font-size: 20px;
+		border: 2px solid rgba(0, 0, 0, 0.5);
+		border-radius: 20px;
+	}
 
   input[type="text"] {
     font-size: 18px;

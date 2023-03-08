@@ -38,14 +38,14 @@ form.addEventListener('submit', (event) => {
   let km = parseInt(document.getElementById('km-input').value);
   let valorFipe = parseInt(document.getElementById('valor-input').value);
 
-  // Criando um novo objeto Carro
   let carro = new Carro(marca, modelo, ano, cor, km, valorFipe);
-  console.log('Marca: ' + carro.marca);
-  console.log('Modelo: ' + carro.modelo);
-  console.log('Ano: ' + carro.ano);
-  console.log('Cor: ' + carro.cor);
-  console.log('Kilometragem: ' + carro.km);
-  console.log('Valor Fipe: ' + carro.valorFipe);
-  console.log('Anos de utilização: ' + carro.anosUtilizacao());
-  console.log('Valor de mercado: ' + carro.valorMercado());
+
+  document.getElementById("marca").innerHTML = "Marca: " + carro.marca;
+  document.getElementById("modelo").innerHTML = "Modelo: " + carro.modelo;
+  document.getElementById("ano").innerHTML = "Ano: " + carro.ano;
+  document.getElementById("cor").innerHTML = "Cor: " + carro.cor;
+  document.getElementById("km").innerHTML = "Kilometragem: " + carro.km;
+  document.getElementById("valorFipe").innerHTML = "Fipe: " + carro.valorFipe;
+  document.getElementById("anosUtilizacao").innerHTML = "Anos de utilização: " + carro.anosUtilizacao();
+	document.getElementById("valorMercado").innerHTML = "Valor de mercado: R$ " + carro.valorMercado();
 });
