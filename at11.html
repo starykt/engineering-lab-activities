@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo-List</title>
+  <script src="script11.js" defer></script>
+</head>
+
+<body>
+  <h1>Todo List</h1>
+  <div class="container">
+    <input type="text" id="valor"> <br>
+    <button id="novoBotao" class="btn">Adicionar Item</button>
+  </div>
+  <div class="itens">
+    <ul id="todoList"></ul>
+  </div>
+</body>
+
+</html>
+
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin-top: 0;
+    padding: 10px;
+    background-color: #360644;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  li {
+    padding: 10px;
+    background-color: #bd78d86e;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  li:nth-child(even) {
+    background-color: #752c9270;
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #22042b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .itens {
+    font-family: 29px;
+  }
+
+  li img {
+    margin: 3px 4px;
+    padding: 2px 2px;
+    font-size: 12px;
+    background-color: #22042b;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
