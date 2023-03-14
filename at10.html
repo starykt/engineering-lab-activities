@@ -7,58 +7,63 @@
 </head>
 <body>
 	<h1 id="titulo">Formulário Professor</h1>
-    <form id="heranca-form">
+	<form id="heranca-form">
+
+		<div class="radios">
+			<input type="radio" id="professor" name="person_type" value="professor" onclick="mostrarCampos()" checked>
+			<label for="professor" class="radio1">Professor</label>
+			<input type="radio" id="estudante" name="person_type" value="estudante" onclick="mostrarCampos()">
+			<label for="estudante">Aluno</label>
+		</div>
+		<div class="container2">
+
 			<div id="div-nome" style="display:block;">
-				<label for="nome-input">Nome:</label>
-				<input type="text" id="nome-input" required placeholder="Digite seu nome completo:"><br>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" required placeholder="Digite seu nome completo:"><br>
 			</div>
 
 			<div id="div-email" style="display:block;">
-				<label for="Email-input" style="display:block;">E-mail:</label>
-				<input type="text" id="email-input" required placeholder="fulano@gmail.com"><br>
+				<label for="email" style="display:block;">E-mail:</label>
+				<input type="text" id="email" required placeholder="fulano@gmail.com"><br>
 			</div>
 
 			<div id="div-telF" style="display:block;">
-				<label for="telF-input">Telefone fixo:</label>
-				<input type="text" id="telF-input" required placeholder="(99)999999-9999"><br>
+				<label for="telF">Telefone fixo:</label>
+				<input type="text" id="telF" required placeholder="(99)999999-9999"><br>
 			</div>
 
-			<div id="div-telC">
-				<label for="telC-input">Celular:</label>
-				<input type="text" id="telC-input" required placeholder="(99)999999-9999"><br>
+			<div id="div-telC" style="display:block;">
+				<label for="telC">Celular:</label>
+				<input type="text" id="telC" required placeholder="(99)999999-9999"><br>
 			</div>
 
 			<div id="div-matricula" style="display:block;">
-				<label for="matricula-input">Matrícula:</label>
-				<input type="text" id="matricula-input" required placeholder="Digite sua matrícula"><br>
+				<label for="matricula">Matrícula:</label>
+				<input type="text" id="matricula" required placeholder="Digite sua matrícula"><br>
 			</div>
 
 			<div id="div-area" style="display:block;">
-				<label for="area-input">Área:</label>
-				<input type="text" id="area-input" required placeholder="Digite sua área de atuação"><br>
+				<label for="area">Área:</label>
+				<input type="text" id="area" placeholder="Digite sua área de atuação"><br>
 			</div>
 
-			<div id="div-lates" style="display:block;">
-				<label for="lates-input">Lattes:</label>
-				<input type="text" id="lates-input" required placeholder="Digite aqui o endereço para o seu Lattes"><br>
+			<div id="div-lattes" style="display:block;">
+				<label for="lattes">Lattes:</label>
+				<input type="text" id="lattes" placeholder="Digite aqui o endereço para o seu Lattes"><br>
 			</div>
 
 			<div id="div-curso" style="display:none;">
-				<label for="curso-input">Curso:</label>
-				<input type="text" id="curso-input" required placeholder="Digite seu curso"><br>
+				<label for="curso">Curso:</label>
+				<input type="text" id="curso" placeholder="Digite seu curso"><br>
 			</div>
 
 			<div id="div-dt" style="display:block;">
-				<label for="dtNasc-input">Data de nascimento:</label>
-				<input type="date" id="dtNasc-input" required><br><br>
+				<label for="dtNasc">Data de nascimento:</label>
+				<input type="date" id="dtNasc" required><br><br>
 			</div>
-  
-      <input type="radio" id="html" name="person_type" value="professor" onclick="mostrarCampos()" checked>
-      <label for="professor">Professor</label><br>
-      <input type="radio" id="aluno" name="person_type" value="aluno" onclick="mostrarCampos()">
-      <label for="aluno">Aluno</label><br>
-  
-      <input type="submit" value="Salvar" class="button"><br><br>
+		</div>
+
+    	<input type="submit" value="Salvar" class="button"><br><br>
     </form>
 
 
@@ -74,9 +79,14 @@
 	  text-align: center;
 	}
   form {
-    text-align: center;
-    width: fit-content;
+		display: inline-block;
   }
+
+	.container2 {
+		columns: 2;
+    text-align: center;
+	}
+
 	label {
 	  display: block;
 	  margin-bottom: 10px;
@@ -84,7 +94,20 @@
 	  margin-top: 1.5%;
     text-align: left;
 	}
-  
+
+	.radios {
+		display: inline-flex;
+		margin: 1%;
+	}
+
+	.radio1 {
+		margin-right: 10%;
+	}
+
+	div {
+		padding: 10px;
+	}
+
 	input[type=text] {
 	  font-size: 18px;
 	  padding: 10px;

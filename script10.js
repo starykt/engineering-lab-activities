@@ -1,14 +1,14 @@
 function mostrarCampos() {
     let tipoPessoa = document.querySelector('input[name="person_type"]:checked').value;
-    if (tipoPessoa == "aluno") {
+    if (tipoPessoa == "estudante") {
         document.getElementById("titulo").textContent = "Formulário Aluno";
         document.getElementById("div-area").style.display = "none";
-        document.getElementById("div-lates").style.display = "none";
+        document.getElementById("div-lattes").style.display = "none";
         document.getElementById("div-curso").style.display = "block";
     } else {
         document.getElementById("titulo").textContent = "Formulário Professor";
         document.getElementById("div-area").style.display = "block";
-        document.getElementById("div-lates").style.display = "block";
+        document.getElementById("div-lattes").style.display = "block";
         document.getElementById("div-curso").style.display = "none";
     }
 }
@@ -24,22 +24,44 @@ function Pessoa (nome, email, telF, telC, dtNasc, matricula) {
     }
     // Define a classe Estudante
 function Estudante() {
-    var curso;
+    this.curso = curso;
 
     Pessoa.call(this, curso);
 }
 
 function Professor() {
-    var area;
-    var lattes;
+    this.area = area;
+    this.lattes = lattes;
 
     Pessoa.call(this, area, lattes);
 }
 
-const tipo_pessoa = document.getElementsByName("type_person");
+let usuarios = [];
+const form = document.getElementById("heranca-form");
 
-if (tipo_pessoa == "professor") {
-}
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const tipoPessoa = form.elements.person_type.value;
+    const nome = form.elements.nome.value;
+    const email = form.elements.email.value;
+    const dataNasc = form.elements.dtNasc.value;
+    const telefoneFixo = form.elements.telF.value;
+    const telefoneCelular = form.elements.telC.value;
+    const matricula = form.elements.matricula.value;
 
-var estudante = new Estudante();
-document.write(estudante.getNome());
+    let usuario;
+
+    if (tipoPessoa === "estudante") {
+      const curso = form.elements.curso.value;
+      usuario = new Estudante(nome, email, dataNasc, telefoneFixo, telefoneCelular, matricula, tipoPessoa, curso);
+    } else if (tipoPessoa === "professor") {
+      const area = form.elements.area.value;
+      const lattes = form.elements.lattes.value;
+      usuario = new Professor(nome, email, dataNasc, telefoneFixo, telefoneCelular, tipoPessoa, matricula, area, lattes);
+    }
+
+    usuarios.push(usuario);
+    form.reset();
+    console.log(usuarios);
+
+  });
