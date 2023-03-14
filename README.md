@@ -19,4 +19,8 @@
 - 8° Implement a script with an array whose values ​​are added dynamically by the user using a form. At each new insertion, display all registered data in alphabetical order in an ordered list of html.
 
 - 9° Implement an HTML form to input the characteristics of a car: make, model, year, color, mileage, value_fipeImplement a script that stores the characteristics filled in the form in an object and that contains, in addition to the above properties, two methods: years of use and market value.
+
+- 10° Implement a code with javascript that performs a dynamic form with creation of objects with inheritance.
+
+- 11° Implement the TODO list in which the user can: Include items; Exclude items; Reorder items.
 ---
