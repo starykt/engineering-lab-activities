@@ -9,7 +9,7 @@
 <body>
 
   <div class="container">
-    <div class="div1">
+    <div class="div2">
       <h1>Aula 1</h1>
       <a href="at1.html">Atividade 01: tipo do dado</a><br>
       <a href="at2.html">Atividade 02: primo</a><br>
@@ -42,41 +42,52 @@
 
 <style>
 .container {
-  display: flex;
+  display: block;
+  flex-wrap: wrap;
   text-align: center;
 }
 
-.div1 {
-  flex: 1;
-  margin-top: 30px;
-}
-
 .div2 {
-  flex: 1;
-  margin-top: 30px;
-}
-
-.div1 a {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.div2 a {
-  display: block;
-  margin-bottom: 10px;
+  width: 80%;
+  margin-top: 0 auto;
+  background-color:#490885cb;
+  border-radius: 15% 10%;
+  box-shadow: 10px 5px 5px #270844;
+  color:#ffffff;
+  margin: 3% 3%;
 }
 
 a {
+  display: block;
+  margin-bottom: 10px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 a:link {
-  color: #6525fa;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #2d0885;
+  color: #308adf;
   font-size: 22px;
+}
+
+h1 {
+  color: white;
+  text-shadow: #270844;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+  .div2 {
+    width: 25%;
+  }
 }
 </style>
