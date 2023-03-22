@@ -1,0 +1,3 @@
+- Framework com criação de componentes, reativo (ações de usuário) e flexível.
+- JSX é uma extensão do JS, inserindo html de uma forma mais simples.
+- Babel, conjunto de ferramentas para conversão de js de uma versão antiga, para a mais atual.
